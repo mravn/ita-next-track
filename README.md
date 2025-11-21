@@ -2,9 +2,9 @@
 
 Dette projekt udgør en *walking skeleton* af projektet next-track.com
 
-## Oversigt over indhold
+Her følger en oversigt over projektets indhold:
 
-### Roden af projektet
+## Roden af projektet
 
 `README.md`\
 Denne fil.
@@ -23,7 +23,7 @@ Information om, hvilke filer og foldere, git skal ignorere.
 
 **TODO**: I skal selv tilføje en `.env` fil  med database-hemmeligheder i jeres lokale klon. Når I kører `npm install`, får I desuden en `node_modules/` folder.
 
-### db/
+## db/
 
 `createDb.js`\
 Script til at re-etablere databasen. Køres med
@@ -46,7 +46,7 @@ Delt kode til at forbinde til databasen. Den bruges både i `db/createDb.js` og 
 - al mulig anden information, som jeres løsning bruger til at vælge det næste track,
 herunder formentlig information om brugerne
 
-### backend/
+## backend/
 
 `server.js`\
 Den kender I. Skelettet definerer ét slutpunkt, `/api/party/:partyId/currentTrack`, sådan at man kan få information om det track, der lige nu spilles til en given fest. Hver fest har en kode, som er en tekststreng af fire hex-cifre. Til festen `a3f7` spilles lige nu tracket `/api/party/a3f7/currentTrack`.
@@ -57,7 +57,7 @@ Det er ikke meningen, at I skal ændre noget i `player.js`.
 
 **TODO**: Der skal nok være andre slutpunkter også, efterhånden som jeres frontend bliver mere interaktiv. Og I skal nok også gemme flere ting i databasen, så vi fx ikke glemmer, hvad der bliver spillet til festerne, bare fordi vi genstarter webserveren. Og så vi kan opsamle nyttig information om brugerne og de dele af deres interaktion med app'en, som er med til at bestemme *next track*.
 
-### frontend/
+## frontend/
 `index.html`\
 Den kender I. Der er en div-element til dynamisk indhold, som opdateres af koden i `index.js`.
 
